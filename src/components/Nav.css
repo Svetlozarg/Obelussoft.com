@@ -1,0 +1,92 @@
+header {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: fixed;
+  transition: 250ms ease-in-out;
+  overflow: hidden;
+  z-index: 999;
+}
+
+.header {
+  background-color: #194664;
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.8); 
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.8);
+}
+
+.header2 {
+  background-color: transparent;
+}
+
+header img {
+  width: 250px;
+  height: auto;
+}
+
+@media (max-width: 400px) {
+  header img {
+    width: 210px;
+  }
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+header nav ul li a {
+  font-size: 20px;
+  color: #fff;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 10px;
+  transition: 250ms ease-in-out;
+}
+
+@media (max-width: 835px) {
+  header nav ul li a {
+    font-size: 18px;
+  }
+}
+
+header nav ul li a:hover {
+  border-bottom: 2px solid #FFA500;
+}
+
+header .header-social .fab, header .header-social .fas {
+  color: #fff;
+  font-size: 34px;
+  margin: 0 10px;
+  transition: 250ms ease-in-out;
+}
+
+header .header-social .fab:hover, header .header-social .fas:hover {
+  color: #FFA500;
+  cursor: pointer;
+}
+
+header .nav-bars {
+  display: none;
+  font-size: 30px;
+  color: #fff;
+}
+
+@media (max-width: 755px) {
+  header nav {
+    display: none;
+  }
+
+  header .header-social {
+    display: none;
+  }
+
+  header .nav-bars {
+    display: block;
+  }
+}

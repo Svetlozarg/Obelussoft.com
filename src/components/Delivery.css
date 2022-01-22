@@ -1,0 +1,88 @@
+.delivery {
+  width: 100%;
+  height: auto;
+  padding: 6rem 10px;
+  overflow: hidden;
+}
+
+.delivery .delivery-wrapper {
+  max-width: 1280px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.delivery .delivery-wrapper h3 {
+  font-size: 30px;
+  margin-bottom: 3rem;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #FFA500;
+  text-align: center;
+}
+
+.delivery .delivery-wrapper .delivery-boxes {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .delivery .delivery-wrapper .delivery-boxes {
+    flex-direction: column;
+  }
+}
+
+.delivery .delivery-wrapper .delivery-boxes .delivery-box {
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+
+.delivery .delivery-wrapper .delivery-boxes .delivery-box .delivery-img-box {
+  box-shadow: 0px 2px 18px 0px rgb(12 113 195 / 13%);
+  border-radius: 50%;
+  max-width: 150px;
+  width: 100%;
+  height: 150px;
+  margin-bottom: 3rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.delivery .delivery-wrapper .delivery-boxes .delivery-box .delivery-img1 {
+  background-image: url(../images/consultation.png);
+}
+
+.delivery .delivery-wrapper .delivery-boxes .delivery-box .delivery-img2 {
+  background-image: url(../images/requirements.png);
+}
+
+.delivery .delivery-wrapper .delivery-boxes .delivery-box .delivery-img3 {
+  background-image: url(../images/7days.png);
+}
+
+.delivery .delivery-wrapper .delivery-boxes .delivery-box .delivery-img-box span{
+  position: relative;
+  top: 98%;
+  left: 38%;
+  color: #fff;
+  background-color: #FFA500;
+  border-radius: 50%;
+  padding: 6px 12px;
+}
+
+.delivery .delivery-wrapper .delivery-boxes .delivery-box p {
+  font-size: 18px;
+  text-align: center;
+  font-family: 'Gotham-Bold';
+}

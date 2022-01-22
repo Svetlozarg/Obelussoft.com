@@ -1,0 +1,43 @@
+.about {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.about .about-wrapper {
+  width: 100%;
+  max-width: 1280px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10rem 10px;
+  overflow: hidden;
+}
+
+.about .about-wrapper h3 {
+  font-size: 30px;
+  margin-bottom: 3rem;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #FFA500;
+  text-align: center;
+}
+
+.about .about-wrapper p {
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 550px) {
+  .about .about-wrapper h3 {
+    font-size: 24px;
+  }
+
+  .about .about-wrapper p {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,127 @@
+.offers {
+  width: 100%;
+  min-height: 95vh;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(https://ik.imagekit.io/obelussoft/offers-bg_mOnhkVHTRV.jpg?updatedAt=1639231528028);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 6rem 10px;
+  overflow: hidden;
+}
+
+@media (max-width: 885px) {
+  .offers {
+    padding: 8rem 10px;
+  }
+}
+
+
+.offers h3 {
+  max-width: 400px;
+  width: 100%;
+  font-size: 30px;
+  margin: 0rem auto 3rem auto;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #FFA500;
+  color: #fff;
+  text-align: center;
+}
+
+.offers .offers-boxes {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 4rem 0;
+}
+
+.offers .offers-boxes .offers-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  margin: 2rem 0;
+}
+
+/* Card */
+article {
+  width: 350px;
+  height: 440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: hsl(0, 0%, 100%);
+  line-height: 2;
+  border-radius: 10px;
+  margin: 0.5rem;
+  transition: transform 0.2s ease-out;
+  box-shadow: 0 0 5px -2px hsla(0, 0%, 0%, 0.1);
+}
+
+article figure {
+  width: 120px;
+  height: 120px;
+  margin-top: -60px;
+  position: relative;
+  
+}
+
+article figure img {
+  border-radius: inherit;
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+}
+
+article div {
+  margin: 2rem;
+}
+
+article div p {
+  color: hsl(250, 5%, 45%);
+  font-weight: 400;
+  font-style: italic;
+  margin: 1rem 0 3rem;
+  position: relative;
+  z-index: 5;
+}
+
+article div h4 {
+  text-align: center;
+  color: hsl(260, 5%, 55%);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
+@media (max-width: 1050px) {
+  article {
+    width: 300px;
+  }
+
+  article div p {
+    font-size: 14px;
+  }
+
+  article div h1 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 890px) {
+  .offers .offers-boxes .offers-box {
+    flex-direction: column;
+  }
+
+  article {
+    margin: 3rem 0;
+  }
+}

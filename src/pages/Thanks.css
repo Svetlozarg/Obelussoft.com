@@ -1,0 +1,42 @@
+.thanks {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.thanks .thanks-main {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(../images/thanks.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #fff;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.thanks .thanks-main .thanks-wrapper {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.thanks .thanks-main h1 {
+  font-size: 40px;
+}
+
+@media (max-width: 570px) {
+  .thanks .thanks-main h1 {
+    font-size: 30px;
+  }
+
+  .thanks .thanks-main h2 {
+    font-size: 20px;
+  }
+}

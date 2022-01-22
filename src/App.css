@@ -1,38 +1,39 @@
-.App {
-  text-align: center;
+@font-face {
+    font-family: Gotham-Book;
+    src: url("./fonts/Gotham-Book.otf") format("opentype");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+    font-family: Gotham-Bold;
+    src: url("./fonts/Gotham-Bold.otf") format("opentype");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* { padding:0; margin:0; outline:0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Gotham-Bold";
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1, h2, h3, h4, h5, h6, ul, ol, p {
+  margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
+input, textarea, select { font-family: Arial, sans-serif; font-size:11px; }
+a img { border:0; }
+a {text-decoration: none; cursor:pointer; }
+.cl { font-size:0; line-height:0; clear:both; display:block; height:0; }
+
+html {
+  font-family: 'Gotham-Book';
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+  padding:0;
+  margin:0;
+  outline:0;
 }

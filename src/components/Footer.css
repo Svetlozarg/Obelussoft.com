@@ -1,0 +1,138 @@
+footer {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+footer .footer-up {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 6rem 10px;
+  background-color: #194664;
+  color: #fff;
+  overflow: hidden;
+}
+
+footer .footer-up .footer-div {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .footer-up .footer-div h4 {
+  width: 250px;
+  font-size: 26px;
+  border-bottom: 2px solid #FFA500;
+  padding-bottom: 10px;
+}
+
+footer .footer-up .footer-div img {
+  width: 400px;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+footer .footer-up .footer-div p {
+  max-width: 450px;
+  width: 100%;
+}
+
+footer .footer-up .footer-div ul {
+  list-style: none;
+}
+
+footer .footer-up .footer-div ul li {
+  margin: 2rem 0;
+}
+
+footer .footer-up .footer-div ul li a {
+  font-size: 18px;
+  color: #fff;
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+  transition: 250ms ease-in-out;
+}
+
+footer .footer-up .footer-div ul li a:hover {
+  border-bottom: 2px solid #FFA500;
+}
+
+footer .footer-up .footer-div .fab {
+  color: #fff;
+  font-size: 40px;
+  margin: 1rem 0;
+  transition: 250ms ease-in-out;
+  cursor: pointer;
+}
+
+footer .footer-up .footer-div .fab:hover {
+  color: #FFA500;
+}
+
+footer .footer-down {
+  width: 100%;
+  height: 45px;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .footer-down p {
+  font-size: 18px;
+  text-align: center;
+}
+
+@media (max-width: 1016px) {
+  footer .footer-up .footer-div img {
+    width: 300px;
+  }
+
+  footer .footer-up .footer-div p {
+    max-width: 350px;
+    font-size: 16px;
+  }
+
+  footer .footer-up .footer-div h4 {
+    max-width: 200px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 850px) {
+  footer .footer-up {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer .footer-up .footer-div img {
+    margin: 0 auto;
+  }
+
+  footer .footer-up .footer-div p {
+    max-width: 100%;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  footer .footer-up .footer-div h4 {
+    max-width: 250px;
+    font-size: 26px;
+    text-align: center;
+    margin: 3rem 0 0 0;
+  }
+
+  footer .footer-up .footer-div ul li {
+    text-align: center;
+  }
+
+  footer .footer-up .footer-div .fab {
+    margin: 2rem auto 0 auto;
+    text-align: center;
+  }
+}

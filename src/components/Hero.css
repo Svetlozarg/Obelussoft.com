@@ -1,0 +1,69 @@
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(https://ik.imagekit.io/obelussoft/hero-bg_OS_xp_NZp-.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: #fff;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.hero .hero-wrapper {
+  width: 100%;
+  height: 100vh;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.hero .hero-wrapper span {
+  color: #FFA500;
+}
+
+.hero .hero-wrapper .span-red {
+  color: #fa1b1b;
+}
+
+.hero .hero-wrapper h1 {
+  font-size: 50px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  animation: .5s ease-in-out 0s 1 slideInFromLeft;
+}
+
+.hero .hero-wrapper p {
+  font-size: 28px;
+  animation: .5s ease-in-out 0s 1 slideInFromLeft;
+  margin: .2rem 0;
+}
+
+@media (max-width: 570px) {
+  .hero .hero-wrapper h1 {
+    font-size: 40px;
+  }
+
+  .hero .hero-wrapper p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 332px) {
+  .hero .hero-wrapper h1 {
+    font-size: 32px;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
